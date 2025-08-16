@@ -1,0 +1,97 @@
+{
+  "name": "backupguard-pro",
+  "version": "0.1.0",
+  "description": "Sistema de Monitoreo y Gestión de Copias de Seguridad Automatizado",
+  "keywords": ["backup", "monitoring", "microservices", "typescript", "mongodb"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:gateway\" \"npm run dev:services\" \"npm run dev:frontend\"",
+    "dev:gateway": "cd services/api-gateway && npm run dev",
+    "dev:services": "concurrently \"npm run dev:user\" \"npm run dev:backup\" \"npm run dev:notification\"",
+    "dev:user": "cd services/user-service && npm run dev",
+    "dev:backup": "cd services/backup-monitor-service && npm run dev",
+    "dev:notification": "cd services/notification-service && npm run dev",
+    "dev:frontend": "cd frontends/admin-dashboard && npm run dev",
+    "build": "npm run build:services && npm run build:frontends",
+    "build:services": "concurrently \"npm run build:gateway\" \"npm run build:user\" \"npm run build:backup\" \"npm run build:notification\"",
+    "build:gateway": "cd services/api-gateway && npm run build",
+    "build:user": "cd services/user-service && npm run build",
+    "build:backup": "cd services/backup-monitor-service && npm run build",
+    "build:notification": "cd services/notification-service && npm run build",
+    "build:frontends": "concurrently \"npm run build:admin\" \"npm run build:user-portal\"",
+    "build:admin": "cd frontends/admin-dashboard && npm run build",
+    "build:user-portal": "cd frontends/user-portal && npm run build",
+    "test": "npm run test:services && npm run test:frontends",
+    "test:services": "concurrently \"npm run test:user\" \"npm run test:backup\" \"npm run test:notification\"",
+    "test:user": "cd services/user-service && npm test",
+    "test:backup": "cd services/backup-monitor-service && npm test",
+    "test:notification": "cd services/notification-service && npm test",
+    "test:frontends": "concurrently \"npm run test:admin\" \"npm run test:user-portal\"",
+    "test:admin": "cd frontends/admin-dashboard && npm test",
+    "test:user-portal": "cd frontends/user-portal && npm test",
+    "test:integration": "cd tests/integration && npm test",
+    "test:e2e": "cd tests/e2e && npm test",
+    "test:coverage": "npm run test && npm run coverage:merge",
+    "coverage:merge": "nyc merge coverage/services coverage/frontends && nyc report --reporter=html",
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "typecheck": "tsc --noEmit",
+    "install:all": "npm install && npm run install:services && npm run install:frontends && npm run install:tests",
+    "install:services": "concurrently \"cd services/api-gateway && npm install\" \"cd services/user-service && npm install\" \"cd services/backup-monitor-service && npm install\" \"cd services/notification-service && npm install\" \"cd services/report-service && npm install\" \"cd services/config-service && npm install\"",
+    "install:frontends": "concurrently \"cd frontends/admin-dashboard && npm install\" \"cd frontends/user-portal && npm install\" \"cd frontends/installer-app && npm install\"",
+    "install:tests": "concurrently \"cd tests/integration && npm install\" \"cd tests/e2e && npm install\"",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "db:seed": "cd scripts && node seed-database.js",
+    "db:migrate": "cd scripts && node migrate-database.js",
+    "db:reset": "cd scripts && node reset-database.js",
+    "start:prod": "NODE_ENV=production concurrently \"npm run start:gateway\" \"npm run start:services\"",
+    "start:gateway": "cd services/api-gateway && npm start",
+    "start:services": "concurrently \"npm run start:user\" \"npm run start:backup\" \"npm run start:notification\"",
+    "start:user": "cd services/user-service && npm start",
+    "start:backup": "cd services/backup-monitor-service && npm start",
+    "start:notification": "cd services/notification-service && npm start"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "nyc": "^15.1.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "workspaces": [
+    "services/*",
+    "frontends/*",
+    "tests/*",
+    "shared/*"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-org/backupguard-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tu-org/backupguard-pro/issues"
+  },
+  "homepage": "https://backupguard.pro",
+  "license": "PROPRIETARY",
+  "author": {
+    "name": "BackupGuard Team",
+    "email": "dev@backupguard.pro"
+  },
+  "contributors": [
+    {
+      "name": "James A. Valencia",
+      "email": "james@backupguard.pro",
+      "role": "Lead Developer"
+    }
+  ]
+}
