@@ -1,5 +1,8 @@
 # Iniciativa 01: Sistema de Monitoreo y Gestión de Copias de Seguridad Automatizado
 
+> **📋 PARTE DEL EJEMPLO**: BackupGuard Pro - Caso de uso completo del AI Agents Framework  
+> **🎯 Ver guía completa**: [docs/example-backupguard/README.md](../../docs/example-backupguard/README.md)
+
 ## 📊 Estado del Proyecto
 - **Status**: 🟡 Pending
 - **Fecha de Inicio**: 16 de agosto de 2025
