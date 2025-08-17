@@ -1,5 +1,8 @@
 # 🏗️ Arquitectura del Sistema - BackupGuard Pro
 
+> **📋 PARTE DEL EJEMPLO**: BackupGuard Pro - Caso de uso completo del AI Agents Framework  
+> **🎯 Ver guía completa**: [../example-backupguard/README.md](../example-backupguard/README.md)
+
 ## 🎯 Visión General
 
 BackupGuard Pro está construido con una arquitectura de microservicios cloud-native diseñada para ser escalable, resiliente y fácil de mantener. Cada componente del sistema está diseñado para operar independientemente mientras se integra perfectamente con el ecosistema completo.

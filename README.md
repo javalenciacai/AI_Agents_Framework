@@ -91,6 +91,7 @@ El framework incluye una implementación completa de ejemplo que demuestra todas
 
 | Recurso | Descripción | Utilidad |
 |---------|-------------|----------|
+| **🎯 [📋 Ejemplo Completo BackupGuard](./docs/example-backupguard/README.md)** | **Índice maestro y guía del caso de uso** | **Punto de entrada principal** |
 | **📋 [Sistema BackupGuard](./README_BACKUP_SYSTEM.md)** | Sistema completo de monitoreo de backups | Ejemplo real de implementación |
 | **🔧 [Instrucciones Copilot](./COPILOT_BACKUP_SYSTEM.md)** | Configuración específica para el ejemplo | Caso de uso específico |
 | **📊 [Planes y User Stories](./plans/01-sistema-monitoreo-backups/)** | Metodología Shape Up aplicada | Gestión de proyectos |
