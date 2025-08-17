@@ -18,7 +18,10 @@ Bienvenido a la documentación oficial del **AI Agents Framework**, el framework
 ### 🏠 **Información Principal**
 - **🤖 [README Principal](../README.md)** - Información general del framework
 - **📋 [Documentación Extendida](../README_FRAMEWORK.md)** - Detalles técnicos completos
-- **📊 [Índice de Verificaciones](./INDEX_VERIFICACIONES.md)** - Metodología y estadísticas
+- **✅ [Validación Quickstart](../QUICKSTART_VALIDATION_SUMMARY.md)** - Pruebas y validación de scripts
+- **🧹 [Limpieza de Scripts](../SCRIPTS_CLEANUP_SUMMARY.md)** - Estado final de scripts del framework
+- **� [Actualización Linux/Mac](../LINUX_MAC_UPDATE_SUMMARY.md)** - Sincronización scripts multiplataforma
+- **�📊 [Índice de Verificaciones](./INDEX_VERIFICACIONES.md)** - Metodología y estadísticas
 
 ### 🤖 **Ingeniería con IA**
 - **⚡ [Guía de Ingeniería IA](./AI_ENGINEERING_GUIDE.md)** - Metodología completa de trabajo con IA

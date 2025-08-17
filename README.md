@@ -21,25 +21,115 @@
 
 ## 🚀 **Inicio Rápido**
 
-### **🆕 Proyecto Nuevo**
+### **📋 Opción 1: Setup Manual (Recomendado)**
+
+#### **🆕 Para Proyectos NUEVOS**
 ```bash
-# 1. Clonar framework
-git clone [este-repo] mi-proyecto-ai
+# 1. Crear directorio del proyecto
+mkdir mi-proyecto-ai
 cd mi-proyecto-ai
 
-# 2. Setup automático (Windows)
+# 2. Crear estructura básica manualmente
+mkdir .github .vscode docs ai-config
+
+# 3. Descargar archivos esenciales
+curl -o .github/copilot-instructions.md https://raw.githubusercontent.com/javalenciacai/AI_Agents_Framework/main/.github/copilot-instructions.md
+curl -o .vscode/settings.json https://raw.githubusercontent.com/javalenciacai/AI_Agents_Framework/main/ai-config/vscode-extensions/settings.json
+curl -o .vscode/extensions.json https://raw.githubusercontent.com/javalenciacai/AI_Agents_Framework/main/ai-config/vscode-extensions/extensions.json
+curl -o docs/AI_ENGINEERING_GUIDE.md https://raw.githubusercontent.com/javalenciacai/AI_Agents_Framework/main/docs/AI_ENGINEERING_GUIDE.md
+
+# 4. Crear .env básico
+echo "# AI API Keys" > .env
+echo "OPENAI_API_KEY=tu_clave_aqui" >> .env
+echo "ANTHROPIC_API_KEY=tu_clave_aqui" >> .env
+
+# 5. ¡Abrir en VS Code y comenzar!
+code .
+```
+
+#### **🔄 Para Proyectos EXISTENTES**
+```bash
+# En tu proyecto existente
+cd tu-proyecto-existente
+
+# 1. Agregar estructura AI
+mkdir .github .vscode docs ai-config 2>/dev/null || true
+
+# 2. Descargar configuraciones IA
+curl -o .github/copilot-instructions.md https://raw.githubusercontent.com/javalenciacai/AI_Agents_Framework/main/.github/copilot-instructions.md
+curl -o .vscode/settings.json https://raw.githubusercontent.com/javalenciacai/AI_Agents_Framework/main/ai-config/vscode-extensions/settings.json
+curl -o .vscode/extensions.json https://raw.githubusercontent.com/javalenciacai/AI_Agents_Framework/main/ai-config/vscode-extensions/extensions.json
+curl -o docs/AI_ENGINEERING_GUIDE.md https://raw.githubusercontent.com/javalenciacai/AI_Agents_Framework/main/docs/AI_ENGINEERING_GUIDE.md
+
+# 3. Agregar variables IA al .env existente
+echo "" >> .env
+echo "# AI Configuration" >> .env
+echo "OPENAI_API_KEY=tu_clave_aqui" >> .env
+echo "ANTHROPIC_API_KEY=tu_clave_aqui" >> .env
+
+# 4. ¡Recargar VS Code y usar superpoderes IA!
+code .
+```
+
+### **⚡ Opción 2: Scripts Automatizados** ✅ **RECOMENDADO**
+
+#### **🪟 Windows** ✅ **FUNCIONAL - PROBADO**
+```bash
+# Setup automático completo (RECOMENDADO)
 scripts\setup-new-project.bat
 
-# 3. ¡Empezar a desarrollar con IA!
-```
+# Setup con configuraciones avanzadas (bases de datos, MCP, etc.)
+scripts\setup-new-project-advanced.bat
 
-### **🔄 Proyecto Existente**
-```bash
-# 1. Migración automática (Windows)
+# Migrar proyecto existente
 scripts\migrate-existing-project.bat C:\path\to\mi-proyecto
-
-# 2. ¡IA integrada en tu proyecto!
 ```
+
+#### **🐧 Linux/Mac** ✅ **ACTUALIZADO**
+```bash
+# Setup automático completo (RECOMENDADO)
+./scripts/setup-new-project.sh
+
+# Proyecto existente  
+./scripts/migrate-existing-project.sh /path/to/mi-proyecto
+```
+
+**📋 Lo que hace el script automático:**
+- ✅ Crea estructura de directorios (.github, .vscode, docs, ai-config)
+- ✅ Descarga configuraciones IA desde GitHub 
+- ✅ Genera .env.example con variables IA
+- ✅ Crea README.md optimizado para IA
+- ✅ Configura .gitignore adecuado
+- ✅ Detecta tipo de proyecto y agrega configuraciones específicas
+
+**⚙️ Script Avanzado incluye además:**
+- 🗄️ Configuración interactiva de bases de datos (PostgreSQL, MongoDB, SQLite, etc.)
+- 🔌 Setup de servidores MCP (Model Context Protocol)
+- 🎯 Configuraciones específicas por tipo de proyecto
+
+### **🎯 Opción 3: Un Solo Comando (Viral)**
+```bash
+# Windows: Descargar y ejecutar directamente
+curl -o setup.bat https://raw.githubusercontent.com/javalenciacai/AI_Agents_Framework/main/scripts/setup-new-project-standalone.bat && setup.bat mi-proyecto
+
+# Linux/Mac: 
+curl -sSL https://raw.githubusercontent.com/javalenciacai/AI_Agents_Framework/main/scripts/setup-new-project.sh | bash -s mi-proyecto
+```
+
+### **✅ Verificación Post-Setup**
+Después de cualquier opción, verifica que tengas:
+- ✅ `.github/copilot-instructions.md` - Instrucciones específicas para Copilot
+- ✅ `.vscode/settings.json` - Configuración VS Code optimizada
+- ✅ `.vscode/extensions.json` - Extensiones IA recomendadas
+- ✅ `docs/AI_ENGINEERING_GUIDE.md` - Metodología completa
+- ✅ `.env` con variables para APIs de IA
+
+### **🚀 Próximo Paso Inmediato**
+1. **Configura tus API keys** en `.env`
+2. **Abre VS Code**: `code .`
+3. **Instala extensiones** cuando VS Code lo sugiera
+4. **Lee la guía**: `docs/AI_ENGINEERING_GUIDE.md`
+5. **¡Empieza a desarrollar con superpoderes IA!**
 
 ---
 
