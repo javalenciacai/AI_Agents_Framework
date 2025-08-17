@@ -1,5 +1,8 @@
 # 👥 User Guide - BackupGuard Pro
 
+> **📋 PARTE DEL EJEMPLO**: BackupGuard Pro - Caso de uso completo del AI Agents Framework  
+> **🎯 Ver guía completa**: [../example-backupguard/README.md](../example-backupguard/README.md)
+
 ## 📋 Índice
 
 - [Getting Started](#getting-started)

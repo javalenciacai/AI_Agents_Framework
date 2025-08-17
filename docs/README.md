@@ -47,6 +47,7 @@ Bienvenido a la documentación oficial del **AI Agents Framework**, el framework
 
 ### 🎯 **Ejemplo Práctico: BackupGuard Pro**
 *El framework incluye un ejemplo completo para demostrar capacidades:*
+- **🎯 [📋 Ejemplo Completo BackupGuard](./example-backupguard/README.md)** - **Índice maestro y guía completa**
 - **📋 [Sistema BackupGuard](../README_BACKUP_SYSTEM.md)** - Ejemplo de implementación
 - **📊 [Planes BackupGuard](../plans/01-sistema-monitoreo-backups/)** - User stories del ejemplo
 - **🔧 [Configuraciones Copilot](../COPILOT_BACKUP_SYSTEM.md)** - Instrucciones específicas

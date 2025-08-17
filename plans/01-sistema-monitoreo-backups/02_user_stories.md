@@ -1,5 +1,8 @@
 # Historias de Usuario - BackupGuard Pro
 
+> **📋 PARTE DEL EJEMPLO**: BackupGuard Pro - Caso de uso completo del AI Agents Framework  
+> **🎯 Ver guía completa**: [docs/example-backupguard/README.md](../../docs/example-backupguard/README.md)
+
 ## 📋 Información General
 - **Proyecto**: Sistema de Monitoreo y Gestión de Copias de Seguridad
 - **Metodología**: Shape Up

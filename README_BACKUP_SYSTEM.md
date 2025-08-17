@@ -1,6 +1,9 @@
-# 🤖 AI Agents Framework - Base Universal para Desarrollo con IA
+# 🛡️ BackupGuard Pro - Ejemplo Completo del AI Agents Framework
 
-![AI Agents Framework Banner](https://via.placeholder.com/800x200/0d1117/ffffff?text=AI+Agents+Framework+-+Universal+Base+for+AI+Development)
+> **📋 NOTA**: Este es el README detallado del ejemplo BackupGuard Pro.  
+> **🎯 Para navegación completa del ejemplo**: [docs/example-backupguard/README.md](./docs/example-backupguard/README.md)
+
+![AI Agents Framework Banner](https://via.placeholder.com/800x200/0d1117/ffffff?text=BackupGuard+Pro+-+Sistema+de+Monitoreo+de+Backups)
 
 ## ✅ **Verificación Oficial Completa**
 
