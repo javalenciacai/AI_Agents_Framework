@@ -1,8 +1,8 @@
 {
-  "name": "backupguard-pro",
-  "version": "0.1.0",
-  "description": "Sistema de Monitoreo y Gestión de Copias de Seguridad Automatizado",
-  "keywords": ["backup", "monitoring", "microservices", "typescript", "mongodb"],
+  "name": "ai-agents-framework",
+  "version": "2.0.0",
+  "description": "Framework Universal para Desarrollo con Agentes IA - Base para cualquier proyecto",
+  "keywords": ["ai", "agents", "framework", "copilot", "claude", "chatgpt", "mcp", "universal"],
   "scripts": {
     "dev": "concurrently \"npm run dev:gateway\" \"npm run dev:services\" \"npm run dev:frontend\"",
     "dev:gateway": "cd services/api-gateway && npm run dev",

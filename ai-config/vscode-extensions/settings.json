@@ -1,0 +1,223 @@
+{
+  // 🤖 AI & GitHub Copilot Configuration
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  },
+  "github.copilot.chat.localeOverride": "es",
+  "github.copilot.advanced": {
+    "secret_key": "copilot",
+    "length": 500,
+    "temperature": 0.1,
+    "top_p": 1,
+    "stop": ["\n\n\n"],
+    "indentationMode": {
+      "python": "spaces",
+      "javascript": "spaces",
+      "typescript": "spaces"
+    }
+  },
+
+  // 🎨 Editor Configuration
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'Cascadia Code', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.6,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // 🔍 IntelliSense & Suggestions
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.tabCompletion": "on",
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+
+  // 📝 File Configuration
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/coverage": true
+  },
+
+  // 🎨 Workbench & UI
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.commandPalette.history": 50,
+
+  // 🔍 Search Configuration
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/*.lock": true
+  },
+  "search.smartCase": true,
+  "search.useIgnoreFiles": true,
+
+  // 🧪 Testing Configuration
+  "jest.autoRun": {
+    "watch": true,
+    "onSave": "test-file"
+  },
+  "jest.showCoverageOnLoad": true,
+  "testing.automaticallyOpenPeekView": "failureInVisibleDocument",
+
+  // 🎨 Language-Specific Settings
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.wordWrap": "on"
+  },
+
+  // 🔧 ESLint Configuration
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.format.enable": true,
+
+  // 🎨 Prettier Configuration
+  "prettier.requireConfig": false,
+  "prettier.useEditorConfig": false,
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "es5",
+
+  // 📊 TypeScript Configuration
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+
+  // 🐛 Debugging Configuration
+  "debug.onTaskErrors": "showErrors",
+  "debug.inlineValues": "on",
+  "debug.showBreakpointsInOverviewRuler": true,
+
+  // 🗃️ Git Configuration
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.showPushSuccessNotification": true,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+
+  // 🔍 Extensions Configuration
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "path-intellisense.extensionOnImport": true,
+
+  // 🎯 AI-Specific Optimizations
+  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.showToolbar": "onHover",
+  "editor.suggest.insertMode": "insert",
+  "editor.suggest.preview": true,
+  "editor.suggest.showStatusBar": true,
+
+  // 🚀 Performance Optimizations
+  "extensions.ignoreRecommendations": false,
+  "telemetry.telemetryLevel": "error",
+  "update.mode": "start",
+  "terminal.integrated.env.windows": {},
+
+  // 🎨 Tailwind CSS Configuration
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)",
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["classnames\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+
+  // 📊 Monitoring & Analytics
+  "problems.showCurrentInStatus": true,
+  "problems.sortOrder": "severity",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // 🎯 Focus & Productivity
+  "breadcrumbs.enabled": true,
+  "editor.minimap.enabled": true,
+  "editor.minimap.maxColumn": 120,
+  "editor.rulers": [80, 120],
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 120,
+
+  // 🔧 Terminal Configuration
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "Cascadia Code, Consolas",
+  "terminal.integrated.shell.windows": "cmd.exe",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt"
+}

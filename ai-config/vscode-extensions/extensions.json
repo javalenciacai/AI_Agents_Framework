@@ -1,0 +1,65 @@
+{
+  "recommendations": [
+    // 🤖 AI & Code Assistance
+    "github.copilot",
+    "github.copilot-chat",
+    "tabnine.tabnine-vscode",
+    "codeium.codeium",
+    "continue.continue",
+    
+    // 🎨 Frontend Development
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-rename-tag",
+    "pranaygp.vscode-css-peek",
+    "zignd.html-css-class-completion",
+    "ms-vscode.vscode-typescript-next",
+    
+    // ⚡ JavaScript/TypeScript
+    "ms-vscode.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-import-es6-ts-jsx",
+    
+    // 🧪 Testing
+    "orta.vscode-jest",
+    "ms-playwright.playwright",
+    "vitest.explorer",
+    "wallabyjs.quokka-vscode",
+    
+    // 🐛 Debugging & Development
+    "ms-vscode.vscode-json",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-eslint",
+    "streetsidesoftware.code-spell-checker",
+    
+    // 🗃️ Database & API
+    "mongodb.mongodb-vscode",
+    "humao.rest-client",
+    "rangav.vscode-thunder-client",
+    "ms-azuretools.vscode-docker",
+    
+    // 📝 Documentation & Productivity
+    "yzhang.markdown-all-in-one",
+    "shd101wyy.markdown-preview-enhanced",
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    "gruntfuggly.todo-tree",
+    
+    // 🎨 UI & Themes
+    "pkief.material-icon-theme",
+    "github.github-vscode-theme",
+    "dracula-theme.theme-dracula",
+    
+    // 🔧 Utilities
+    "formulahendry.code-runner",
+    "ms-vscode-remote.remote-containers",
+    "ms-azuretools.vscode-docker",
+    "bradlc.vscode-tailwindcss",
+    
+    // 📊 Analytics & Performance
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ]
+}

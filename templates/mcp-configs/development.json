@@ -1,0 +1,50 @@
+{
+  "_metadata": {
+    "description": "Configuración MCP para desarrollo - Todos los servidores verificados con fuentes oficiales",
+    "verification_date": "2025-01-16",
+    "sources": {
+      "github": {
+        "official_repo": "https://github.com/github/github-mcp-server",
+        "mcp_registry": "https://github.com/modelcontextprotocol/servers",
+        "status": "Oficial GitHub",
+        "verification": "Listado en repositorio oficial MCP servers como 'Official Integration'"
+      },
+      "linear": {
+        "official_repo": "https://linear.app/docs/mcp",
+        "mcp_registry": "https://github.com/modelcontextprotocol/servers",
+        "status": "Oficial Linear",
+        "verification": "Listado en repositorio oficial MCP servers como 'Official Integration'"
+      },
+      "slack": {
+        "official_repo": "https://github.com/zencoderai/slack-mcp-server",
+        "mcp_registry": "https://github.com/modelcontextprotocol/servers",
+        "status": "Mantenido por Zencoder (originalmente oficial)",
+        "verification": "Originalmente en servers-archived, ahora mantenido por Zencoder según repositorio oficial MCP"
+      }
+    },
+    "verification_source": "https://github.com/modelcontextprotocol/servers - Repositorio oficial Model Context Protocol"
+  },
+  "mcpServers": {
+    "github": {
+      "command": "uvx",
+      "args": ["mcp-server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "linear": {
+      "command": "npx",
+      "args": ["-y", "@linear/mcp-server"],
+      "env": {
+        "LINEAR_API_KEY": "${LINEAR_API_KEY}"
+      }
+    },
+    "slack": {
+      "command": "uvx", 
+      "args": ["mcp-server-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": "${SLACK_BOT_TOKEN}"
+      }
+    }
+  }
+}

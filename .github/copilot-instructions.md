@@ -1,7 +1,38 @@
-# BackupGuard Pro - AI Coding Agent Instructions
+# AI Agents Framework - Universal Project Base
+
+## ✅ **Verificación Oficial Completa**
+
+**🎯 IMPORTANTE**: Todas las tecnologías, agentes IA y herramientas mencionadas en estas instrucciones han sido verificadas con **fuentes oficiales**.
+
+📋 **Ver Referencias Completas**: [../docs/REFERENCIAS_OFICIALES.md](../docs/REFERENCIAS_OFICIALES.md)
+
+---
 
 ## 🗣️ Idioma de Comunicación
 **IMPORTANTE**: Todas las interacciones deben ser en **español (variante latinoamericana)**.
+
+## 🎯 **Framework Universal para Agentes IA**
+Este proyecto es ahora un **framework base universal** diseñado para:
+
+1. **Arrancar proyectos nuevos** con Agentes IA desde el día 1
+2. **Integrar Agentes IA** en proyectos existentes de cualquier lenguaje
+3. **Establecer mejores prácticas** para desarrollo con IA
+4. **Proporcionar metodología probada** de Ingeniería de Contexto
+
+### **Compatibilidad Multi-Stack**
+Este framework funciona con cualquier stack tecnológico:
+- **Frontend**: React, Vue, Angular, Svelte, Next.js, etc.
+- **Backend**: Node.js, Python, Java, C#, Go, Rust, PHP, Ruby, etc.
+- **Mobile**: React Native, Flutter, Swift, Kotlin, etc.
+- **Desktop**: Electron, Tauri, .NET MAUI, Qt, etc.
+- **AI/ML**: TensorFlow, PyTorch, Scikit-learn, etc.
+
+### **Agentes IA Soportados**
+- **IDE**: GitHub Copilot, Cursor, Tabnine, Codeium
+- **Conversacionales**: ChatGPT, Claude, Gemini, Perplexity
+- **CLI**: GitHub Copilot CLI, Shell GPT, AI Shell
+- **Locales**: Ollama, LM Studio, Continue, Cline
+- **Especializados**: v0.dev, Bolt.new, Replit
 
 ## 👥 Roles y Responsabilidades
 Cuando trabajes en este proyecto, debes asumir estos roles expertos:

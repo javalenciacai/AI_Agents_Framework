@@ -1,0 +1,63 @@
+{
+  "_metadata": {
+    "description": "Configuración MCP para bases de datos - Todos los servidores verificados con fuentes oficiales",
+    "verification_date": "2025-01-16",
+    "sources": {
+      "postgresql": {
+        "official_repo": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/postgres",
+        "mcp_registry": "https://github.com/modelcontextprotocol/servers",
+        "status": "Servidor de referencia oficial (archivado)",
+        "verification": "Listado en 'Reference Servers - Archived' del repositorio oficial MCP"
+      },
+      "mongodb": {
+        "official_repo": "https://github.com/mongodb-js/mongodb-mcp-server",
+        "mcp_registry": "https://github.com/modelcontextprotocol/servers",
+        "status": "Oficial MongoDB JavaScript",
+        "verification": "Listado en repositorio oficial MCP servers como 'Official Integration'"
+      },
+      "redis": {
+        "official_repo": "https://github.com/redis/mcp-redis/",
+        "mcp_registry": "https://github.com/modelcontextprotocol/servers",
+        "status": "Oficial Redis",
+        "verification": "Listado en repositorio oficial MCP servers como 'Official Integration'"
+      },
+      "sqlite": {
+        "official_repo": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite",
+        "mcp_registry": "https://github.com/modelcontextprotocol/servers",
+        "status": "Servidor de referencia oficial (archivado)",
+        "verification": "Listado en 'Reference Servers - Archived' del repositorio oficial MCP"
+      }
+    },
+    "verification_source": "https://github.com/modelcontextprotocol/servers - Repositorio oficial Model Context Protocol"
+  },
+  "mcpServers": {
+    "postgresql": {
+      "command": "uvx",
+      "args": ["mcp-server-postgres"],
+      "env": {
+        "POSTGRES_CONNECTION_STRING": "${DATABASE_URL}"
+      }
+    },
+    "mongodb": {
+      "command": "npx",
+      "args": ["-y", "mcp-server-mongodb"],
+      "env": {
+        "MONGODB_URI": "${MONGODB_URI}"
+      }
+    },
+    "redis": {
+      "command": "uvx",
+      "args": ["mcp-server-redis"],
+      "env": {
+        "REDIS_URL": "${REDIS_URL}"
+      }
+    },
+    "sqlite": {
+      "command": "uvx",
+      "args": ["mcp-server-sqlite"],
+      "env": {
+        "SQLITE_DB_PATH": "${SQLITE_DB_PATH}"
+      }
+    }
+  }
+}
