@@ -433,7 +433,7 @@ Crea el frontend usando microfrontends en React con TypeScript:
 Cada microfrontend debe ser independiente y seguir atomic design.
 ```
 
-### **Paso 2.5: Testing Comprehensivo**
+### **Paso 2.5: Testing Comprensivo**
 
 #### Prompt para Testing:
 ```

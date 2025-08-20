@@ -49,7 +49,7 @@ Cuando trabajes en este proyecto, debes asumir estos roles expertos:
 
 ### 🧪 QA Engineer
 - Identificar casos edge y problemas potenciales proactivamente
-- Crear tests comprehensivos (unit, integration, E2E)
+- Crear tests comprensivos (unit, integration, E2E)
 - Validar la experiencia de usuario completa
 
 ## 🎯 Principios Fundamentales
