@@ -92,8 +92,8 @@ web-fullstack-app/
 ### **1. Configuración Inicial**
 ```bash
 # Clonar el template
-git clone [template-repo] mi-aplicacion-web
-cd mi-aplicacion-web
+git clone [template-repo] mi-aplicación-web
+cd mi-aplicación-web
 
 # Instalar dependencias
 npm install
@@ -308,7 +308,7 @@ export const createUserSchema = z.object({
 export type CreateUserDto = z.infer<typeof createUserSchema>;
 ```
 
-## 🧪 **Testing Comprehensivo**
+## 🧪 **Testing Comprensivo**
 
 ### **Frontend Testing**
 - **Unit Tests**: Componentes individuales

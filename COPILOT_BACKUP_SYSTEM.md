@@ -27,7 +27,7 @@ Al trabajar en este proyecto, Copilot debe asumir estos roles:
 
 ### 🧪 QA Engineer
 - Identificar casos edge y problemas potenciales
-- Crear tests comprehensivos (unit, integration, E2E)
+- Crear tests comprensivos (unit, integration, E2E)
 - Validar la experiencia de usuario
 
 ## 🏗️ Stack Tecnológico
