@@ -5,6 +5,7 @@
 
 ## 📋 Índice
 
+- [AI-Driven Development Workflow](./AI_DRIVEN_DEVELOPMENT_WORKFLOW.md)
 - [Getting Started](#getting-started)
 - [Development Environment](#development-environment)
 - [Project Structure](#project-structure)
